@@ -1,0 +1,19 @@
+{% block content %}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">nombre</th>
+        <th scope="col">tematica</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for vol in Clases %}
+      <tr>
+        <th scope="row">{{vol.id}}</th>
+        <td>{{vol.nombre}}</td>
+        <td>{{vol.tematica}}</td>
+      </tr>
+    </tbody>
+  </table>
+  {% endblock %}
